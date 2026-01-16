@@ -1,0 +1,3 @@
+echo 'EXECUTANDO SMOKE TEST'
+echo '15/01/2024 - 09:08 AM'
+return 0
