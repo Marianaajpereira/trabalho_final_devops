@@ -21,6 +21,14 @@ public class DemoApplication {
 	}
        
 	@GetMapping("/")
+	public String home(){
+		return "<html><body style='text-align: center; font-family: Arial, sans-serif; padding: 20px;'>" +
+		       "<h1>Bem-vindo! 🐶</h1>" +
+		       "<img src='doguinho.png' alt='Doguinho Fofo' style='border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);'>" +
+		       "</body></html>";
+	}
+
+	@GetMapping("/healthCheck")
         public String healthCheck(){
                 return "HEALTH CHECK OK!";
         }
@@ -60,11 +68,6 @@ public class DemoApplication {
 	@GetMapping("/10CLDR")
 	String cldr(){
 		return "Turma 10 MBA Cloud 2025";
-	}
-
-	@GetMapping("/7DVPR")
-	String DVP7(){
-		return "Turma 7 MBA DEVOPS";
 	}
 	
 }	
